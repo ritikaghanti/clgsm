@@ -59,11 +59,11 @@
             this.panelDropDown.Controls.Add(this.button5);
             this.panelDropDown.Controls.Add(this.button4);
             this.panelDropDown.Controls.Add(this.button3);
-            this.panelDropDown.Location = new System.Drawing.Point(16, 96);
+            this.panelDropDown.Location = new System.Drawing.Point(27, 86);
             this.panelDropDown.MaximumSize = new System.Drawing.Size(106, 238);
             this.panelDropDown.MinimumSize = new System.Drawing.Size(106, 45);
             this.panelDropDown.Name = "panelDropDown";
-            this.panelDropDown.Size = new System.Drawing.Size(106, 238);
+            this.panelDropDown.Size = new System.Drawing.Size(106, 45);
             this.panelDropDown.TabIndex = 4;
             // 
             // button7
@@ -76,6 +76,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "COMPUTER ENGINEERING";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -87,6 +88,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "ELECTRONICS TELECOMMUNICATION ENGINEERING";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -98,6 +100,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "MECHANICAL ENGINEERING";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -131,7 +134,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(230, 86);
+            this.button1.Location = new System.Drawing.Point(259, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 45);
             this.button1.TabIndex = 5;
@@ -141,23 +144,24 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(630, 86);
+            this.button2.Location = new System.Drawing.Point(720, 86);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 45);
             this.button2.TabIndex = 6;
             this.button2.Text = "CONTACT US";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.upload);
             this.panel2.Controls.Add(this.viewpost);
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Location = new System.Drawing.Point(436, 86);
+            this.panel2.Location = new System.Drawing.Point(496, 86);
             this.panel2.MaximumSize = new System.Drawing.Size(106, 135);
             this.panel2.MinimumSize = new System.Drawing.Size(106, 45);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(106, 130);
+            this.panel2.Size = new System.Drawing.Size(106, 45);
             this.panel2.TabIndex = 7;
             // 
             // upload
@@ -224,27 +228,28 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(16, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(745, 56);
+            this.panel1.Size = new System.Drawing.Size(825, 56);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(145, 141);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 137);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(616, 253);
+            this.pictureBox1.Size = new System.Drawing.Size(847, 285);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 406);
+            this.ClientSize = new System.Drawing.Size(857, 446);
+            this.Controls.Add(this.panelDropDown);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panelDropDown);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

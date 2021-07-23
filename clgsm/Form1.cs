@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using clgsm.Properties;
 
@@ -122,13 +128,39 @@ namespace clgsm
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\CivilAbout.JPG");
+            pictureBox1.ImageLocation = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // pictureBox1.Image = Image.FromFile(@"C:\Users\Reev M D'souza\Downloads\T&P.JPG");
-            // pictureBox1.ImageLocation = "";
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\T&P.JPG");
+             pictureBox1.ImageLocation = "";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\ContactUs.JPG");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\MechAbout.JPG");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\EtcAbout.JPG");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\CompAbout.JPG");
         }
     }
 }
