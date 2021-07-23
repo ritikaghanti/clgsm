@@ -157,7 +157,7 @@
             this.panel2.MaximumSize = new System.Drawing.Size(106, 135);
             this.panel2.MinimumSize = new System.Drawing.Size(106, 45);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(106, 45);
+            this.panel2.Size = new System.Drawing.Size(106, 130);
             this.panel2.TabIndex = 7;
             // 
             // upload

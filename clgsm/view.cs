@@ -32,28 +32,29 @@ namespace clgsm
             OleDbCommand cmd = new OleDbCommand();
             DataTable rand = new DataTable();
 
-
-            String sql = "select * from [sheet2$]"; 
+            String sql = "select username1,Textpt from [sheet2$]";
             cmd.Connection = con;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
+            //string chck = upload.imgptnm;
             con.Close();
             ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(rand);
-            dataGridView1.DataSource = rand;
-
-
-
+            dataGridView2.DataSource = rand;
+            
             string[] files = Directory.GetFiles(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images");
             DataTable table = new DataTable();
             table.Columns.Add("File Path");
-
             for (int i = 0; i < files.Length; i++)
             {
                 FileInfo file = new FileInfo(files[i]);
                 table.Rows.Add(file.Name);
             }
 
+        
             dataGridView1.DataSource = table;
+
+
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -61,25 +62,25 @@ namespace clgsm
 
         }
 
-        //private void dataGridView1_DoubleClick(object sender, EventArgs e)
-        //{
-        //    pcture myForm = new pcture();
-        //    string imagName = dataGridView1.CurrentRow.Cells[0].Value.ToString();//Cells[0].Value.ToString();
-        //    Image im;
-        //    im = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images\" + imagName);
-        //    myForm.pictureBox1.Image = im;
-        //    myForm.ShowDialog();
-        //}
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            pcture myForm = new pcture();
+            string imagName = dataGridView1.CurrentRow.Cells[0].Value.ToString();//Cells[0].Value.ToString();
+            Image im;
+            im = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images\" + imagName);
+            myForm.pictureBox1.Image = im;
+            myForm.ShowDialog();
+        }
 
-        //private void dataGridView1_ColumnDividerDoubleClick(object sender, DataGridViewColumnDividerDoubleClickEventArgs e)
-        //{
+        private void dataGridView1_ColumnDividerDoubleClick(object sender, DataGridViewColumnDividerDoubleClickEventArgs e)
+        {
         //    //pcture myForm = new pcture();
         //    //string imagName = dataGridView1.CurrentRow.Cells[0].Value.ToString();//Cells[0].Value.ToString();
         //    //Image im;
         //    //im = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images\" + imagName);
         //    //myForm.pictureBox1.Image = im;
         //    //myForm.ShowDialog();
-        //}
+        }
 
     private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
     {
@@ -93,6 +94,11 @@ namespace clgsm
             var Form1 = new Form1();
             Form1.Show();
             //ji
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         //private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

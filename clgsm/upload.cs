@@ -20,6 +20,7 @@ namespace clgsm
         }
         
         public static bool loggedin = false;
+        public static string imgptnm = "";
         private void upload_Load(object sender, EventArgs e)
         {
             if (loggedin)
@@ -57,9 +58,11 @@ namespace clgsm
             
             label4.Text = "Image file saved successfully";
             OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source='F:\\college.xlsx';Extended Properties=Excel 8.0;");
+            //imgptnm = textBox1.Text;
             con.Open();
             OleDbCommand cmd = new OleDbCommand();
-            String sql = "INSERT INTO [sheet2$](username1,Textpt,imge) values('"+login.username1+"','" + textBox2.Text + "','"+textBox1.Text+"')";
+            String sql = "INSERT INTO [sheet2$](username1,Textpt) values('" + login.username1 + "','" + textBox2.Text + "')";
+            
             cmd.Connection = con;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
