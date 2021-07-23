@@ -41,19 +41,19 @@ namespace clgsm
             ((OleDbDataAdapter)new OleDbDataAdapter(cmd)).Fill(rand);
             dataGridView1.DataSource = rand;
 
-           
 
-            //string[] files = Directory.GetFiles(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images");
-            //DataTable table = new DataTable();
-            //table.Columns.Add("File Path");
 
-            //for (int i = 0; i < files.Length; i++)
-            //{
-            //    FileInfo file = new FileInfo(files[i]);
-            //    table.Rows.Add(file.Name);
-            //}
+            string[] files = Directory.GetFiles(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\clgsm\Images");
+            DataTable table = new DataTable();
+            table.Columns.Add("File Path");
 
-            //dataGridView1.DataSource = table;
+            for (int i = 0; i < files.Length; i++)
+            {
+                FileInfo file = new FileInfo(files[i]);
+                table.Rows.Add(file.Name);
+            }
+
+            dataGridView1.DataSource = table;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -92,6 +92,7 @@ namespace clgsm
             this.Hide();
             var Form1 = new Form1();
             Form1.Show();
+            //ji
         }
 
         //private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
