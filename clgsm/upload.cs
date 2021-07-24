@@ -88,5 +88,27 @@ namespace clgsm
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Form1 = new Form1();
+            Form1.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+           WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

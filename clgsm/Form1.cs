@@ -162,6 +162,31 @@ namespace clgsm
         {
             pictureBox1.Image = Image.FromFile(@"F:\Users\RISHAB GHANTI\Documents\Visual Studio 2010\Projects\clgsm\picturess\CompAbout.JPG");
         }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void panelDropDown_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

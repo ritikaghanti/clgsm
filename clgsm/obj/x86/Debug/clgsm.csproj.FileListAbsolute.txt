@@ -1,6 +1,6 @@
+f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\obj\x86\Debug\clgsm.csproj.ResolveComReference.cache
 f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\bin\Debug\clgsm.exe
 f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\bin\Debug\clgsm.pdb
-f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\obj\x86\Debug\clgsm.csproj.ResolveComReference.cache
 f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\obj\x86\Debug\clgsm.Form1.resources
 f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\obj\x86\Debug\clgsm.login.resources
 f:\users\rishab ghanti\documents\visual studio 2010\Projects\clgsm\clgsm\obj\x86\Debug\clgsm.pcture.resources
