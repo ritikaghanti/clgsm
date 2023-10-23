@@ -46,6 +46,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,13 +58,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(25, 36);
+            this.panel1.Location = new System.Drawing.Point(25, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(995, 75);
+            this.panel1.Size = new System.Drawing.Size(995, 99);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -72,7 +74,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(252, 20);
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(245, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(496, 31);
@@ -260,6 +263,15 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(367, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 31);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "DBCE ReachMe";
+            // 
             // upload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -309,5 +321,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label6;
     }
 }
